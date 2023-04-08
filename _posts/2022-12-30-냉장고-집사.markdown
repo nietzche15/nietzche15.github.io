@@ -1,0 +1,177 @@
+---
+layout: post
+title: 냉장고 집사
+date: 2022-12-30 00:00:00 +0300
+image: project01/project01_cover.jpg
+tags: TeamProject
+description: 언제 어디서나 쉽게 냉장고의 식재료를 확인하고, 식재료 현황을 바탕으로 레시피를 추천해 효율적인 관리를 도와주는 서비스
+---
+
+## About
+
+언제 어디서나 쉽게 냉장고의 식재료를 확인하고, 식재료 현황을 바탕으로 레시피를 추천해 효율적인 냉장고 관리를 도와주는 서비스
+
+#### Duration
+
+2022/12/10 ~ 2022/12/29
+
+#### Team
+
+FE3, BE1
+
+---
+
+## 🛠️ Skills & Libraries
+
+#### Backend, DB, Server
+
+_Node.js, Express.js, Sequelize, MySql, AWS(EC2)_
+
+#### Frontend
+
+_JavaScript, Bootstrap, SweetAlert, Chart.js, Axios, Ajax_
+
+#### Communication
+
+<a href="https://github.com/nietzche15/SeSAC_Fridge/tree/develop" target="_blank">GitHub</a>,
+<a href="https://www.figma.com/file/XBcCD1jbtGqqt3vfmdogs5/SeSAC-Fridge?node-id=0-1&t=C85sLpErOtQ0FoOV-0" target="_blank">Figma</a>,
+<a href="https://www.notion.so/38dd33a0a22d4e78a52f2f2fe8a0a79c" target="_blank">Notion</a>
+, Whale
+
+---
+
+## 📌 Goals
+
+##### 1. 언제 어디에서나 간편하게 냉장고 속 식재료를 확인할 수 있어 중복 구매와 과소비를 방지한다.
+
+##### 2. 식재료의 유통기한과 구매 일자를 관리하고 사용자에게 알려 버려지는 식재료를 줄인다.
+
+##### 3. 보관 중인 식재료의 레시피를 추천하고, 사용할 양을 확인시켜 식재료 낭비를 막는다.
+
+---
+
+![]({{ site.baseurl }}/images/project01/project01-FC.png)
+_Flow Chart_
+
+---
+
+## 🙋🏻‍♀️ 담당 기능
+
+#### ✔️ 냉장고 식재료 현황 관리
+
+- ##### 냉장고 식재료 정보 추가, 수정, 및 삭제 ( CRUD )
+
+&emsp;&ensp; - 식재료 이름, 카테고리, 양, 유통기한/구매일자 저장
+
+- **회원 로그인 시, 식재료 정보 업데이트 알림**
+
+&emsp;&ensp; - 유통기한 지난 식재료 자동 삭제 및 알림  
+&emsp;&ensp; - 유통기한 임박 식재료 알림
+
+#### ✔️ 선택한 식재료를 포함한 레시피 보이기
+
+&emsp; - 냉장고에 보관중인 식재료 중 사용할 식재료 선택  
+&emsp; - 선택한 식재료를 포함한 레시피만 노출
+
+#### ✔️ Header & footer
+
+- **Navbar**  
+  &emsp;&ensp; 로그인 - 비로그인
+
+- **패밀리 사이트 연결**
+
+---
+
+## 📖 Content Details
+
+### 1. 냉장고 식재료 관리
+
+##### 냉장실에 보관하기, 냉동실에 보관하기 버튼을 클릭해 입력한
+
+##### 식재료 정보를 각각 fresh 테이블과 frozen 테이블에 저장한다.
+
+![]({{ site.baseurl }}/images/project01/project01-fridgefull.png)
+_보관중인 식재료가 있는 회원의 냉장고 화면_
+
+- 식재료를 유통기한 혹은 구매일자 오름차순으로 정렬하여 사용자가 임박한 상품에 주의를 기울이도록 했다.
+
+![]({{ site.baseurl }}/images/project01/project01-emptyalert.png)
+_보관중인 식재료가 없는 회원의 냉장고 화면_
+
+- fresh, frozen 테이블의 데이터를 확인하고 냉장실이 빈 경우, 냉동실이 빈 경우, 냉장실과 냉동실이 모두 빈 경우를 구분하여 알린다.
+- 빈 냉장고 알림창은 확인을 누르면 자정에 만료되는 Cookie가 생성되어 당일엔 다시 보이지 않는다.
+
+#### 1-A. 식재료 보관하기
+
+![]({{ site.baseurl }}/images/project01/project01-fridgeadd.gif)
+_냉장실 식재료 추가 화면_
+
+**입력하지 않은 항목이 있거나 맞지 않게 입력한 경우 validation 메세지가 나타난다.**
+
+- 식재료 명  
+  &emsp; - 식재료 명은 사용자가 입력한 값에서 공백을 제거하고 사용한다.  
+  &emsp; - 식재료 명을 PK로 사용하기 떄문에 중복을 확인한 후 수정할 수 없도록 했다.
+
+- 카테고리  
+  &emsp; - 식재료 파악와 레시피 분류를 위해 카테고리를 함께 저장한다.
+
+- 양  
+  &emsp; - 파악이 쉽도록 시각적 자료인 range bar를 사용했다.  
+  &emsp; - 다양한 계량 단위의 식품을 보관하기 때문에 통용되는 기준을 설정하고 적용했다.  
+  &emsp;&emsp; 1. 아직 사용하거나 먹지 않은 상태 (100%)  
+  &emsp;&emsp; 2. 사용하거나 먹고 남은 상태 (0%초과 100%미만, 50%로 통칭하여 표기)  
+  &emsp;&emsp; 3. 보관할 것이 없는 상태 (0%, 제거)
+
+- 유통기한/구매일자  
+  &emsp; - 주로 신선식품인 fresh 테이블(냉장실)은 유통기한을,  
+  &emsp;&ensp; 소비기한 긴 냉동제품이 대부분인 frozen 테이블(냉동실)은 구매일자를 저장한다.  
+  &emsp; - 유통기한은 오늘 이후의 날짜만, 구매일자는 오늘 이전의 날짜만 선택 가능하다.
+
+#### 1-B. 식재료 정보 수정 및 삭제하기
+
+**식재료 정보를 변경한 후 페이지를 새로고침시켜 업데이트된 정보가 보이도록 했다.**
+
+![]({{ site.baseurl }}/images/project01/project01-fridgeupdate.png)
+_보관중인 식재료 수정 화면_
+
+![]({{ site.baseurl }}/images/project01/project01-fridgedelete.png)
+_보관중인 식재료 삭제 화면_
+
+---
+
+### 2. 로그인 시 식재료 정보 업데이트 알림
+
+##### 로그인 일자를 기준으로 사용자가 보관 중인 식재료 현황을 업데이트 한다.
+
+#### 2-A. 유통기한 지난 식재료 자동 삭제 및 알림
+
+![]({{ site.baseurl }}/images/project01/project01-deletealert.png)
+_유통기한 지난 식재료 자동 삭제 알림_
+
+- 로그인 시, 로그인 일자를 기준으로 회원의 fresh 테이블에서 유통기한이 경과한 식재료를 자동으로 삭제한다.
+- 삭제한 식재료가 있는 경우, 삭제한 식재료 목록을 팝업으로 보여준다.  
+  &emsp; - 최초 로그인 시 유통기한이 지난 식재료는 모두 삭제되기 때문에 따로 설정하지 않아도 최대 1일 1회만 보인다.
+
+#### 2-B. 유통기한 임박한 식재료 알림
+
+![]({{ site.baseurl }}/images/project01/project01-expirealert.png)
+_유통기한 임박 식재료 알림_
+
+- 로그인 일자를 기준으로 fresh 테이블에서 유통기한이 2일이내인 식재료 개수를 사용자에게 알린다.
+
+---
+
+### 3. 선택한 식재료의 레시피 보기
+
+##### 냉장고에서 선택한 식재료가 포함된 레시피만 보이도록 한다.
+
+![]({{ site.baseurl }}/images/project01/project01-fridgetorecipe.gif)
+
+- 사용자가 선택한 식재료 명 목록을 배열에 담고 문자열로 변환해 recipe controller로 보낸다.
+- 레시피 테이블의 레시피 재료 칼럼에 일치하는 식재료가 있는 레시피만 보여준다.
+
+### Takeaways
+
+You, a bobsleder!? That I'd like to see! No! The kind with looting and maybe starting a few fires! Good news, everyone! There's a report on TV with some very bad news! When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film!
+
+Eeeee! Now say "nuclear wessels"! Why did you bring us here? Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." That's the ONLY thing about being a slave.
