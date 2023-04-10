@@ -2,8 +2,51 @@
 layout: post
 title: Mafia Game
 date: 2023-02-26 00:00:00 +0300
-image: project03_cover.jpg
+image: project03/project03_cover.jpg
 tags: TeamProject
+---
+
+## About
+
+언제 어디서나 쉽게 냉장고의 식재료를 확인하고 관리할 수 있는 서비스. 유통기한 등 식재료 현황을 사용자에게 알리고, 보관 중인 식료품을 바탕으로 레시피를 추천해 효율적인 냉장고 자원 활용을 돕는다.
+
+#### Duration
+
+2023/02/11 ~ 2023/02/25
+
+#### Team
+
+FE2, BE2
+
+---
+
+## 🛠️ Skills & Libraries
+
+#### Backend, DB, Server
+
+_Node.js, Express.js, Sequelize, MySql, AWS(EC2)_
+
+#### Frontend
+
+_JavaScript, Bootstrap, SweetAlert, Chart.js, Axios, Ajax_
+
+#### Communication
+
+<a href="https://github.com/nietzche15/SeSAC_Fridge/tree/develop" target="_blank">GitHub</a>,
+<a href="https://www.figma.com/file/XBcCD1jbtGqqt3vfmdogs5/SeSAC-Fridge?node-id=0-1&t=C85sLpErOtQ0FoOV-0" target="_blank">Figma</a>,
+<a href="https://www.notion.so/38dd33a0a22d4e78a52f2f2fe8a0a79c" target="_blank">Notion</a>
+, Whale
+
+---
+
+## 📌 Goals
+
+##### 1. 언제 어디에서나 간편하게 냉장고 속 식재료를 확인할 수 있어 중복 구매와 과소비를 방지한다.
+
+##### 2. 식재료의 유통기한과 구매 일자를 관리하고 사용자에게 알려 버려지는 식재료를 줄인다.
+
+##### 3. 보관 중인 식재료의 레시피를 추천하고, 사용할 양을 확인시켜 식재료 낭비를 막는다.
+
 ---
 
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
