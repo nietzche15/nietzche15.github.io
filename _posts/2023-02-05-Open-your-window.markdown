@@ -12,7 +12,7 @@ tags: TeamProject
 
 #### Duration
 
-2022/12/10 ~ 2023/02/04
+2023/01/26 ~ 2023/02/04
 
 #### Team
 
@@ -28,7 +28,7 @@ _Node.js, Express.js, Sequelize, MySql, AWS(EC2)_
 
 #### Frontend
 
-_JavaScript, Bootstrap, SweetAlert, Chart.js, Axios, Ajax_
+_React, Redux, JavaScript, Axios, Ajax_
 
 #### Communication
 

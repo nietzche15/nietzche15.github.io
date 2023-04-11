@@ -50,8 +50,56 @@ _JavaScript, Bootstrap, SweetAlert, Chart.js, Axios, Ajax_
 
 ---
 
+## 📖 Flow Chart & Pages
+
 ![]({{ site.baseurl }}/images/project01/project01-FC.png)
 _Flow Chart_
+
+#### 🔎 메인 Page & Header
+
+![]({{ site.baseurl }}/images/project01/project01-mainpg.jpeg)
+
+- 캐러셀 : 캐러셀 별로 키워드가 저장되어 있어, 클릭 시 해당 분류의 레시피만 렌더
+- Nav bar
+  - Search bar : 식재료 명을 입력하면, 레시피 재료로 해당 재료를 포함한 레시피만 렌더
+  - 로그인 시, 레시피 추천 page, 찜 리스트 page, 나의 냉장고 page, 내 정보 page로 각각 이동
+  - 비로그인시, 레시피 추천 page와 로그인 버튼만 활성화
+- 냉장고 집사 서비스 이용가이드, 냉장고 및 식재료 관리 방법
+
+#### 🔎 레시피 추천 Page
+
+![]({{ site.baseurl }}/images/project01/project01-recipepg.jpeg)
+
+- 레시피 공유 사이트 '만개의 레시피'에서 레시피 데이터 크롤링하여 recipe 테이블 생성
+  - 레시피 제목, 레시피 사진, 레시피 재료 목록, 조리법, 조리 시간
+- 레시피 찜하기 버튼을 클릭해 마이 페이지 > 찜 리스트에서 관리
+- 레시피 선택 > 요리하기 클릭 시, 사용한만큼 냉장고의 식재료 양 차감
+
+#### 🔎 나의 냉장고 Page
+
+![]({{ site.baseurl }}/images/project01/project01-myfridgepg.jpeg)
+
+- 냉장실/냉동실에 보관하기 : 실제 냉장고에 보관 중인 식재료 정보를 입력하여 fresh/frozen 테이블에 저장
+  - 식재료 이름, 카테고리, 양, 유통기한 및 구매일자 저장
+- 변경/삭제 : 테이블에 저장된 개별 식재료 정보를 변경 및 삭제하여 업데이트
+- 레시피 확인하기 : 냉장고의 식재료 중 사용자가 선택한 식재료가 포함된 레시피만 보여준다.
+
+#### 🔎 마이 페이지
+
+![]({{ site.baseurl }}/images/project01/project01-myinfopg.jpeg)
+
+- user 테이블과 recipe, fresh/fozen 테이블에서 사용자 아이디로 조회한 데이터를 보여준다.
+- 현황 차트 : 사용자가 보관 중인 식재료와 요리한 레시피를 카테고리 별 시각자료로 나타낸다.
+- 찜 리스트, 요리한 레시피 확인
+- 회원 정보 수정, 회원탈퇴
+
+#### 🔎 로그인 Page
+
+![]({{ site.baseurl }}/images/project01/project01-loginpg.jpeg)
+
+- 회원가입
+- 로그인, 소셜 로그인, 자동 로그인
+- 비밀번호 찾기
 
 ---
 

@@ -36,11 +36,9 @@
     4.5 Tag Page
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-
 @import '0-settings/variables';
 @import '0-settings/mixins';
 @import '0-settings/helpers';
-
 
 /* >>>>>>>>>>>>>> :: 1-Tools and Libs <<<<<<<<<<<<<<< */
 
@@ -62,12 +60,10 @@
 // 1.6 Zoom
 @import '1-tools/zoom';
 
-
 /* >>>>>>>>>>>>>> :: 2-Base Styles <<<<<<<<<<<<<<< */
 
 // 2.1 Base
 @import '2-base/base';
-
 
 /* >>>>>>>>>>>>>> :: 3-Modules <<<<<<<<<<<<<<< */
 
@@ -97,6 +93,9 @@
 
 // 3.9 Instagram
 @import '3-modules/footer';
+
+// 3.10 Aboutme
+@import '3-modules/aboutme';
 
 /* >>>>>>>>>>>>>> :: 4-Layouts <<<<<<<<<<<<<<< */
 
