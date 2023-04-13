@@ -20,6 +20,8 @@ facebook: https://facebook.com/ # Add your Facebook handle
 dribbble: https://dribbble.com/ # Add your Dribbble handle
 instagram: https://instagram.com/ # Add your Instagram handle
 pinterest: https://pinterest.com/ # Add your Pinterest handle
+github: https://github.com/nietzche15/
+tistory: https://scientific-hibiscus.tistory.com/
 
 #-------------------------------
 # Comment Section (Disqus)
@@ -40,7 +42,13 @@ mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.
 
 #-------------------------------
 # AboutMe Contents
-aboutme:
-  title01: Certificates
-  01sub01: TOEIC 950 [ 2022.08 ]
-  01sub02: SQLD [ 2023.04 ]
+education:
+  title: 🎓 Education
+  sub1: Univ
+  sub2: SeSAC 풀스택 웹 융합 개발자 양성 과정 - 용산 1기
+  per2: 2022.10 - 2023.04
+
+certificate:
+  title: 📜 Certificate
+  sub1: TOEIC [ 2022.08 ]
+  sub2: SQLD [ 2023.04 ]

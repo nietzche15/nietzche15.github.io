@@ -8,30 +8,44 @@
           <p class="hero__subtitle">{{ site.data.settings.author.bio }}</p>
           <div class="hero__social">
             <span class="hero__social-title">Email |</span>
-            <a href="#"
+            <!-- <a href="#"
               ><ion-icon name="mail" style="font-size: 25px"></ion-icon
-            ></a>
-            yeongeun93@gmail.com
+            ></a> -->
+            <span class="hero__social-text"> yeongeun93@gmail.com </span>
           </div>
           <div class="hero__social">
             <span class="hero__social-title">Phone |</span>
-            <a href="#">
+            <!-- <a href="#">
               <ion-icon name="call" style="font-size: 25px"></ion-icon></a
-            >010.8810.8463
+            > -->
+            <span class="hero__social-text">010.8810.8463</span>
           </div>
           <div class="hero__social">
             <span class="hero__social-title">GitHub |</span>
-            <a href="{{ site.data.settings.twitter }}">
-              <ion-icon name="logo-github" style="font-size: 25px"></ion-icon
+            <a href="{{ site.data.settings.github }}">
+              <ion-icon
+                name="logo-github"
+                style="font-size: 25px; padding: 0 10px 5px 10px"
+              ></ion-icon
             ></a>
-          </div>
-          <div class="hero__social">
             <span class="hero__social-title">Tistory |</span>
-            <a href="{{ site.data.settings.twitter }}">
-              <ion-icon name="bookmarks" style="font-size: 25px"></ion-icon
+            <a href="{{ site.data.settings.tistory }}">
+              <ion-icon
+                name="bookmarks"
+                style="font-size: 25px; padding: 0 10px 5px 10px"
+              ></ion-icon
             ></a>
-            <!-- {% include contact-link.html %} -->
           </div>
+          <!-- <div class="hero__social">
+            <span class="hero__social-title">Tistory |</span>
+            <a href="{{ site.data.settings.tistory }}">
+              <ion-icon
+                name="bookmarks"
+                style="font-size: 25px; padding: 0 10px 5px 10px"
+              ></ion-icon
+            ></a> -->
+          <!-- {% include contact-link.html %} -->
+          <!-- </div> -->
         </div>
       </div>
       <div class="col col-6 col-t-12">

@@ -54,7 +54,7 @@ layout: default
     <article class="post {{ no-image }} col col-8 col-t-10 col-m-12">
       <div class="post__content">{{ content }}</div>
 
-      <div class="post__share">
+      <!-- <div class="post__share">
         <span class="share__title">Share this article:</span>
         <ul class="share__list list-reset">
           <li class="share__item">
@@ -101,7 +101,7 @@ layout: default
             ></a>
           </li>
         </ul>
-      </div>
+      </div> -->
     </article>
     <!-- end post -->
   </div>
@@ -118,6 +118,10 @@ layout: default
       ></a>
       <h2 class="post__nav__title">
         <i class="ion ion-md-arrow-back"></i>
+        <!-- <ion-icon
+          name="arrow-back-outline"
+          style="padding-top: 15px"
+        ></ion-icon> -->
         <a href="{{ site.baseurl }}{{page.previous.url}}"
           >{{page.previous.title}}</a
         >
@@ -139,6 +143,10 @@ layout: default
       <h2 class="post__nav__title">
         <a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a>
         <i class="ion ion-md-arrow-forward"></i>
+        <!-- <ion-icon
+          name="arrow-forward-outline"
+          style="padding-top: 15px"
+        ></ion-icon> -->
       </h2>
       <p class="next__excerpt">
         {% if page.next.description %} {{ page.next.description }} {% else %} {{

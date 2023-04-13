@@ -4,11 +4,12 @@ title: Open your window
 date: 2023-02-05 00:00:00 +0300
 image: project02/project02_cover.jpg
 tags: TeamProject
+description: 내 방 침대에 누워 세계 곳곳의 풍경을 구경하고 NASA에 선별한 일자별 우주 사진까지 확인할 수 있습니다. 나의 창밖 풍경을 공유하거나 마음에 드는 사진은 아카이빙하고 미니 게임도 즐길 수 있는 종합 힐링 서비스입니다.
 ---
 
 ## About
 
-세계 곳곳의 사람들과 창 밖 풍경을 공유하고 창밖을 넘어 매일 다른 우주 사진 우주와 관련한 미니 게임도 즐길 수 있는 종합 힐링 서비스.
+내 방 침대에 누워 세계 곳곳의 풍경을 구경하고 NASA에 선별한 일자별 우주 사진까지 확인할 수 있는 힐링 서비스. 나의 창밖 풍경을 공유하거나 마음에 드는 사진은 아카이빙하고 미니 게임도 즐길 수 있습니다.
 
 #### Duration
 
@@ -48,6 +49,26 @@ _React, Redux, JavaScript, Axios, Ajax_
 ##### 3. 보관 중인 식재료의 레시피를 추천하고, 사용할 양을 확인시켜 식재료 낭비를 막는다.
 
 ---
+
+## 🌐 Flow Chart & ERD
+
+![]({{ site.baseurl }}/images/project02/project02-FC.png)
+_Flow Chart_
+
+---
+
+## 🙋🏻‍♀️ 담당 기능
+
+#### 💻 냉장고 식재료 현황 관리
+
+- ##### 냉장고 식재료 정보 추가, 수정, 및 삭제 ( CRUD )
+
+&emsp;&ensp; - 식재료 이름, 카테고리, 양, 유통기한 및 구매일자 저장
+
+- **회원 로그인 시, 식재료 정보 업데이트 알림**
+
+&emsp;&ensp; - 유통기한 지난 식재료 자동 삭제 및 알림  
+&emsp;&ensp; - 유통기한 임박 식재료 알림
 
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
