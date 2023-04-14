@@ -70,6 +70,10 @@ _Flow Chart_
 &emsp;&ensp; - 유통기한 지난 식재료 자동 삭제 및 알림  
 &emsp;&ensp; - 유통기한 임박 식재료 알림
 
+---
+
+## 📖 Content Details
+
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
 You lived before you met me?! Ow, my spirit! Humans dating robots is sick. **You people wonder why I'm still single?** _It's 'cause all the fine robot sisters are dating humans!_ I guess if you want children beaten, you have to do it yourself.

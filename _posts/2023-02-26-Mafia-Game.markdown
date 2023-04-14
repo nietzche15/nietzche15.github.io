@@ -28,7 +28,7 @@ _Node.js, Express.js, Sequelize, MySql, AWS(EC2)_
 
 #### Frontend
 
-_JavaScript, Bootstrap, SweetAlert, Chart.js, Axios, Ajax_
+_React, Redux, JavaScript, Axios, Ajax_
 
 #### Communication
 
@@ -48,6 +48,27 @@ _JavaScript, Bootstrap, SweetAlert, Chart.js, Axios, Ajax_
 ##### 3. 보관 중인 식재료의 레시피를 추천하고, 사용할 양을 확인시켜 식재료 낭비를 막는다.
 
 ---
+
+## 🌐 Flow Chart & ERD
+
+![]({{ site.baseurl }}/images/project01/project01-FC.png)
+_Flow Chart_
+
+---
+
+## 🙋🏻‍♀️ 담당 기능
+
+#### 💻 냉장고 식재료 현황 관리
+
+- ##### 냉장고 식재료 정보 추가, 수정, 및 삭제 ( CRUD )
+
+&emsp;&ensp; - 식재료 이름, 카테고리, 양, 유통기한 및 구매일자 저장
+
+- **회원 로그인 시, 식재료 정보 업데이트 알림**
+
+---
+
+## 📖 Content Details
 
 Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
