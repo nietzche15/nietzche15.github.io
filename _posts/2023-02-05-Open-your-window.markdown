@@ -69,6 +69,8 @@ _Flow Chart_
 
 - ##### 회원 정보 data 무결성 확보
 
+&emsp; - Passport
+
 &emsp; - Email 중복 확인
 &emsp; - Email, Password, Phone 정규식 확인
 
