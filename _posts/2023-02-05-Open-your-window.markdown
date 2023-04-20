@@ -69,7 +69,7 @@ _Flow Chart_
 
 - ##### 회원 정보 data 무결성 확보
 
-&emsp; - Passport
+&emsp; - Passport / jwt
 
 &emsp; - Email 중복 확인
 &emsp; - Email, Password, Phone 정규식 확인
@@ -94,6 +94,18 @@ _Flow Chart_
 
 #### 🔎 UNIVERSE Page
 
+![]({{ site.baseurl }}/images/project02/project02-universe-main.png)
+_Universe Main_
+
+![]({{ site.baseurl }}/images/project02/project02-universe-video.png)
+_Universe Video_
+
 #### 🔎 Hangman Game Page
+
+![]({{ site.baseurl }}/images/project02/project02-universe-game.png)
+_Universe Game Main_
+
+![]({{ site.baseurl }}/images/project02/project02-universe-game-2.png)
+_Universe Game Page_
 
 #### 🔎 WINDOW Page
