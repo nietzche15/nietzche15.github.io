@@ -33,9 +33,9 @@ _React, Redux, JavaScript, Axios, Ajax_
 
 #### Communication
 
-<a href="https://github.com/nietzche15/SeSAC_Fridge/tree/develop" target="_blank">GitHub</a>,
-<a href="https://www.figma.com/file/XBcCD1jbtGqqt3vfmdogs5/SeSAC-Fridge?node-id=0-1&t=C85sLpErOtQ0FoOV-0" target="_blank">Figma</a>,
-<a href="https://www.notion.so/38dd33a0a22d4e78a52f2f2fe8a0a79c" target="_blank">Notion</a>
+<a href="https://github.com/nietzche15/windowToUNIVERSE" target="_blank">GitHub</a>,
+<a href="https://www.figma.com/file/B1zA8TGk9QMuP7NWl42Efv/windowToUNIVERSE?node-id=0-1&t=EvOZ0GwbLocrViJs-0 target="\_blank">Figma</a>,
+<a href="https://www.notion.so/scientific-hibiscus/window-to-UNIVERSE-18bb09e530414b31988cac9d4009fbb7" target="_blank">Notion</a>
 , Whale
 
 ---
@@ -69,24 +69,59 @@ _Flow Chart_
 
 - ##### 회원 정보 data 무결성 확보
 
-&emsp; - Passport / jwt
-
 &emsp; - Email 중복 확인
+&emsp; - Password 암호화 (bcrypt)
 &emsp; - Email, Password, Phone 정규식 확인
 
-- ##### 로그인 & 소셜 로그인
+- ##### 소셜 로그인
 
-&emsp; - 카카오톡 로그인
+&emsp; - 카카오톡 로그인 (passport)
 
 #### 💻 미니 게임 - Hangman 제작
 
-&emsp; - 게임 로직 작성
+&emsp; - 게임 로직
 
 ---
 
 ## 📖 Content Details
 
----
+### [ NASA APOD API ]
+
+##### Astronomy Picture of the Day (APOD) API로 NASA에서 매일 업로드하는 우주의 image/video의 정보를 알 수 있다.
+
+## ![]({{ site.baseurl }}/images/project02/project02-API-APOD.png)
+
+##### 1. data가 pending 상태 일때 loading icon을 띄운다.
+
+- 요청한 data의 상태를 pending/fulfilled/rejected로 나눠서 관리한다.
+- fulfilled 전까지 laoding = true 로 상태를 설정하여 loading icon 을 띄운다.
+
+##### 2. 처음 접속 시, date 를 공백처리해 deafult 값인 오늘의 data를 받는다.
+
+- title, explanation, url, media_type
+- media_type에 따라  
+  &emsp;&emsp; video 인 경우 videoContainer(iframe) 삽입  
+  &emsp;&emsp; image인 경우 background-image 설정
+
+##### 3. datepicker
+
+- datepicker 날짜 선택 시, value 형식 (YYYY/MM/DD) 을 API 형식(YYYY-MM-DD)으로 변환하여 새 Data 요청
+- datepicker의 range 를 data가 존재하는 1995-06-16 이후 ~ 오늘 이전으로 설정
+
+### [ 회원정보 관리 ]
+
+##### 회원가입
+
+## ![]({{ site.baseurl }}/images/project02/project02-API-sign.png)
+
+- 입력받는 회원 정보는 정규식을 통해 검증한다.  
+  &emsp;&emsp; Email, 닉네임, 비밀번호, 전화번호
+- Email 은 중복 확인하여 저장한다.
+- 비밀번호는 bcypt로 암호화하여 관리한다.
+
+##### 소셜 로그인 - 카카오톡
+
+- passport-kakao 모듈을 이용
 
 ## 📙 Pages
 
