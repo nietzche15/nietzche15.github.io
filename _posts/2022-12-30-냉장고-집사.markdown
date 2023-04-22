@@ -84,7 +84,9 @@ _Flow Chart_
 
 ---
 
-## 📖 Content Details
+<details>
+<summary>📖 Content Details</summary>
+<div markdown="1">
 
 ### [ 냉장고 식재료 관리 ]
 
@@ -105,7 +107,7 @@ _보관중인 식재료가 없는 회원의 냉장고 화면_
   &emsp;&emsp;&emsp;&emsp; - 냉동실이 빈 경우  
   &emsp;&emsp;&emsp;&emsp; - 냉장실과 냉동실이 모두 빈 경우
 
-- 알림창은 확인을 클릭하면 자정에 만료되는 Cookie가 생성되어, 당일엔 다시 나타나지 않는다.
+- 알림창은 확인을 클릭하면 자정에 만료되는 Cookie가 생성된다.
 
 #### 1. 식재료 보관하기
 
@@ -135,7 +137,7 @@ _냉장실 식재료 추가 화면_
 
 #### 2. 식재료 정보 수정 및 삭제하기
 
-**화면 하단의 변경/삭제 버튼 클릭시, 개별 식재료를 수정 및 삭제할 수 있다.**  
+**화면 하단의 변경/삭제 버튼 : 개별 식재료 정보를 수정 및 삭제하여 fresh/frozen 테이블 저장**  
 **식재료 정보를 변경한 후에는 페이지가 새로고침되어 업데이트된 정보가 반영된 화면이 보인다.**
 
 ![]({{ site.baseurl }}/images/project01/project01-fridgeupdate.png)
@@ -182,8 +184,12 @@ _유통기한 임박 식재료 알림_
 
 ---
 
-## 📙 Pages
+</div>
+</details>
 
+<details>
+<summary>📙 Pages</summary>
+<div markdown="1">
 #### 🔎 메인 Page & Header
 
 ![]({{ site.baseurl }}/images/project01/project01-mainpg.jpeg)
@@ -232,8 +238,7 @@ _유통기한 임박 식재료 알림_
 
 ---
 
+</div>
+</details>
+
 ## 🖖🏻Takeaways
-
-You, a bobsleder!? That I'd like to see! No! The kind with looting and maybe starting a few fires! Good news, everyone! There's a report on TV with some very bad news! When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film!
-
-Eeeee! Now say "nuclear wessels"! Why did you bring us here? Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." That's the ONLY thing about being a slave.

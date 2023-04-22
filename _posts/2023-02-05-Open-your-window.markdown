@@ -34,19 +34,9 @@ _React, Redux, JavaScript, Axios, Ajax_
 #### Communication
 
 <a href="https://github.com/nietzche15/windowToUNIVERSE" target="_blank">GitHub</a>,
-<a href="https://www.figma.com/file/B1zA8TGk9QMuP7NWl42Efv/windowToUNIVERSE?node-id=0-1&t=EvOZ0GwbLocrViJs-0 target="\_blank">Figma</a>,
+<a href="https://www.figma.com/file/B1zA8TGk9QMuP7NWl42Efv/windowToUNIVERSE?node-id=0-1&t=EvOZ0GwbLocrViJs-0" target="\_blank">Figma</a>,
 <a href="https://www.notion.so/scientific-hibiscus/window-to-UNIVERSE-18bb09e530414b31988cac9d4009fbb7" target="_blank">Notion</a>
 , Whale
-
----
-
-## 📌 Goals
-
-##### 1.
-
-##### 2. 식재료의 유통기한과 구매 일자를 관리하고 사용자에게 알려 버려지는 식재료를 줄인다.
-
-##### 3. 보관 중인 식재료의 레시피를 추천하고, 사용할 양을 확인시켜 식재료 낭비를 막는다.
 
 ---
 
@@ -61,17 +51,17 @@ _Flow Chart_
 
 #### 💻 NASA APOD API
 
-- ##### API data 비동기 처리
+- ##### API data의 비동기 처리
 
-&emsp;&ensp; **- Redux의 Thunk & Slice를 활용한 data loading 상태 관리**
+&emsp;&ensp; **-요청한 data loading 상태 관리 (Redux의 Thunk & Slice)**
 
 #### 💻 회원가입 & 로그인
 
 - ##### 회원 정보 data 무결성 확보
 
-&emsp; - Email 중복 확인
-&emsp; - Password 암호화 (bcrypt)
-&emsp; - Email, Password, Phone 정규식 확인
+&emsp;&ensp; - Email 중복 확인  
+&emsp;&ensp; - Password 암호화 (bcrypt)  
+&emsp;&ensp; - Email, Password, Phone 정규식 확인
 
 - ##### 소셜 로그인
 
@@ -83,11 +73,15 @@ _Flow Chart_
 
 ---
 
-## 📖 Content Details
+<details>
+<summary>📖 Content Details</summary>
+<div markdown='1'>
 
 ### [ NASA APOD API ]
 
-##### Astronomy Picture of the Day (APOD) API로 NASA에서 매일 업로드하는 우주의 image/video의 정보를 알 수 있다.
+##### NASA에서 매일 업로드하는 우주의 image/video 정보를 알 수 있는
+
+##### Astronomy Picture of the Day (APOD) API 를 사용해 페이지 구성
 
 ## ![]({{ site.baseurl }}/images/project02/project02-API-APOD.png)
 
@@ -108,32 +102,40 @@ _Flow Chart_
 - datepicker 날짜 선택 시, value 형식 (YYYY/MM/DD) 을 API 형식(YYYY-MM-DD)으로 변환하여 새 Data 요청
 - datepicker의 range 를 data가 존재하는 1995-06-16 이후 ~ 오늘 이전으로 설정
 
-### [ 회원정보 관리 ]
+### [ 회원 DB 설계 ]
 
-##### 회원가입
+##### 회원 정보
 
 ## ![]({{ site.baseurl }}/images/project02/project02-API-sign.png)
 
-- 입력받는 회원 정보는 정규식을 통해 검증한다.  
+- 입력받는 회원 정보는 정규식을 통해 검증  
   &emsp;&emsp; Email, 닉네임, 비밀번호, 전화번호
-- Email 은 중복 확인하여 저장한다.
-- 비밀번호는 bcypt로 암호화하여 관리한다.
+- Email 은 중복 확인하여 저장
+- 비밀번호는 bcypt로 암호화하여 관리
 
 ##### 소셜 로그인 - 카카오톡
 
-- passport-kakao 모듈을 이용
+- passport-kakao 모듈 이용
+
+### [ 미니게임 로직 ]
+
+</div>
+</details>
 
 ## 📙 Pages
 
 #### 🔎 메인 Page
 
+![]({{ site.baseurl }}/images/project02/project02-main.png)
+_Main_
+
 #### 🔎 UNIVERSE Page
 
 ![]({{ site.baseurl }}/images/project02/project02-universe-main.png)
-_Universe Main_
+_Universe Main (media_type=image)_
 
 ![]({{ site.baseurl }}/images/project02/project02-universe-video.png)
-_Universe Video_
+_Universe Main (media_type=video)_
 
 #### 🔎 Hangman Game Page
 
